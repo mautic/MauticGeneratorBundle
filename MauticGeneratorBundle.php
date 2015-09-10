@@ -23,6 +23,6 @@ class MauticGeneratorBundle extends Bundle
      */
     public function getParent()
     {
-		return 'SensioGeneratorBundle';
+        return 'SensioGeneratorBundle';
     }
 }
