@@ -1,0 +1,27 @@
+<?php
+
+namespace {{ namespace }}\Controller;
+
+{% block use_statements %}
+use Mautic\CoreBundle\Controller\FormController;
+{% endblock use_statements %}
+
+{% block class_definition %}
+class {{ controller }}Controller extends FormController
+{% endblock class_definition %}
+{
+{% block class_body %}
+{% for action in actions %}
+    public function {{ action.name }}(
+        {%- if action.placeholders|length > 0 -%}
+            ${{- action.placeholders|join(', $') -}}
+        {%- endif -%})
+    {
+        return array(
+            // ...
+        );
+    }
+
+{% endfor -%}
+{% endblock class_body %}
+}
