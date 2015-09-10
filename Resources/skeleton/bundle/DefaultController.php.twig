@@ -1,0 +1,19 @@
+<?php
+
+namespace {{ namespace }}\Controller;
+
+{% block use_statements %}
+use Mautic\CoreBundle\Controller\FormController;
+{% endblock use_statements %}
+
+{% block class_definition %}
+class DefaultController extends FormController
+{% endblock class_definition %}
+{
+{% block class_body %}
+    public function indexAction($page = 1)
+    {
+        return $this->indexStandard($page);
+    }
+{% endblock class_body %}
+}
