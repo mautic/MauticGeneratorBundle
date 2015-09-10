@@ -1,0 +1,15 @@
+<?php
+
+namespace {{ namespace }};
+
+{% block use_statements %}
+use Mautic\PluginBundle\Bundle\PluginBundleBase;
+{% endblock use_statements %}
+
+{% block class_definition %}
+class {{ bundle }} extends PluginBundleBase
+{% endblock class_definition %}
+{
+{% block class_body %}
+{% endblock class_body %}
+}

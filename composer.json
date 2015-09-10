@@ -1,0 +1,17 @@
+{
+    "name": "mautic/generator-bundle",
+    "license": "GPL-3.0",
+    "type": "symfony-bundle",
+    "description": "Generator for Mautic bundles",
+    "autoload": {
+        "psr-0": {
+            "Mautic\\Bundle\\MauticGeneratorBundle": ""
+        }
+    },
+    "require": {
+        "php": ">=5.3.7",
+        "sensio/generator-bundle": "^2.5.3",
+        "symfony/console": "2.6.*",
+        "symfony/framework-bundle": "2.5.*"
+    }
+}
